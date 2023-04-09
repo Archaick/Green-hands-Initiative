@@ -5,3 +5,62 @@ a {
 li {
     list-style-type: none;
 }
+
+/* Top navbar here */
+
+.top-navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+.top-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+/* End */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 100px;
+    min-height: 60vh;
+    /* aligning video with its parent */
+    position: relative;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    /* displaying the text */
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    /* Fixing the video */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .intro {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 960px;
+} */
+
+.row {
+    display: flex;
+}
+
+.col {
+    padding: 0 15px;
+}
