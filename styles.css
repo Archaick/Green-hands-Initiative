@@ -21,13 +21,13 @@ li {
     position: fixed;
     padding: 16px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.743);
     z-index: 2;
 }
 
 .top-navbar ul {
     display: flex;
-    gap: 2em;
+    gap: 1.2em;
 }
 
 .right-link {
@@ -44,11 +44,19 @@ li {
 .top-navbar .logo {
     font-family: 'Raleway', sans-serif;
     color: white;
-    border-right: 3px solid white;
-    padding: 0.3em;
-    padding-right: 1em;
     font-size: 1.5em;
-    text-shadow: 1px 0px 0px black;
+}
+
+.main-logo {
+    width: auto;
+    height: 2em;
+}
+
+.left-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
 }
 
 .right-link a {
@@ -68,7 +76,7 @@ li {
     background-attachment: fixed;
     color: white;
     margin-bottom: 100px;
-    min-height: 65vh;
+    min-height: 75vh;
     /* aligning video with its parent */
     position: relative;
     overflow: hidden;
@@ -97,10 +105,8 @@ li {
 .intro {
     font-family: 'Raleway', sans-serif;
     max-width: 300px;
-    font-size: 3em;
-    border-right: 5px solid white;
-    border-radius: 0.2em;
-    padding: 0.2em;
+    font-size: 2.3em;
+    padding: 1em;
 }
 
 .description {
@@ -109,6 +115,8 @@ li {
     max-height: 250px;
     padding: 2em;
     text-align: justify;
+    border-left: 2.5px solid #FF6D60;
+    border-radius: 0.5em;
 }
 
 .row {
@@ -117,4 +125,24 @@ li {
 
 .col {
     padding: 0 15px;
+}
+
+/* End of hero */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mission h2 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+}
+
+.mission p {
+    width: 600px;
+    padding: 2em;
 }
