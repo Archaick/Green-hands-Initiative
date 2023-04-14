@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -42,7 +42,6 @@ li {
 }
 
 .top-navbar .logo {
-    font-family: 'Raleway', sans-serif;
     color: white;
     font-size: 1.5em;
 }
@@ -59,10 +58,6 @@ li {
     margin-left: 2em;
 }
 
-.right-link a {
-    font-family: 'Raleway', sans-serif;
-}
-
 /* End of navbar */
 
 .hero {
@@ -71,15 +66,30 @@ li {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     background: rgba(0, 0, 0, 0.2);
     background-attachment: fixed;
     color: white;
     margin-bottom: 100px;
-    min-height: 75vh;
+    min-height: 100vh;
     /* aligning video with its parent */
     position: relative;
+    /* video doesn't overlap with other content. */
     overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Change thumbnail to vid's origin later */
+    background: url('video-thumbnail.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
 }
 
 .video-bg {
@@ -91,7 +101,14 @@ li {
     /* Fixing the video */
     top: 50%;
     left: 50%;
+    width: auto;
+    height: auto;
     transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .intro-container {
@@ -101,6 +118,7 @@ li {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1em;
 }
+
 
 .intro {
     font-family: 'Raleway', sans-serif;
@@ -114,7 +132,6 @@ li {
     max-width: 500px;
     max-height: 250px;
     padding: 2em;
-    text-align: justify;
     border-left: 2.5px solid #FF6D60;
     border-radius: 0.5em;
 }
@@ -126,7 +143,6 @@ li {
 .col {
     padding: 0 15px;
 }
-
 /* End of hero */
 
 .container {
@@ -140,6 +156,7 @@ li {
     justify-content: center;
     width: auto;
     text-align: center;
+    font-family: Roboto;
 }
 
 .mission p {
