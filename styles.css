@@ -21,7 +21,7 @@ li {
     position: fixed;
     padding: 16px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
@@ -91,6 +91,11 @@ li {
     filter: blur(10px);
 }
 
+.title-color {
+    color: #ff8a41;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+
 .video-bg {
     position: absolute;
     /* displaying the text */
@@ -131,8 +136,9 @@ li {
     max-width: 500px;
     max-height: 250px;
     padding: 2em;
-    border-left: 2.5px solid #FF6D60;
-    border-radius: 0.5em;
+    border-left: 2.5px solid;
+    border-image: linear-gradient(to bottom, #FF6E31, #FFA500);
+    border-image-slice: 1;
 }
 
 .row {
@@ -170,13 +176,15 @@ li {
 .divider {
     margin: 0 auto;
     height: 2px;
-    background-color: #EB455F;
+    background-color: #ff8a41;
     width: 100%;
     max-width: 60vw;
 }
 
 .info-container {
     margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .info {
@@ -190,20 +198,54 @@ li {
 
 .img-sort {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1em;
     padding: 1em;
-    height: 300px;
+    height: 100;
     width: auto;
     color: #181D31;
     text-align: center;
     font-size: 1.4em;
     /* images will not react to interaction */
     pointer-events: none;
+    /* background-color: black; */
 }
 .info-img {
     height: 12em;
-    width: 14em;
+    width: 18em;
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0px 0.5px 0.5px #FA9884, -0.2px -0.2px 5px #FA9884;
+
+}
+.direction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    width: 60vw;
+    background-color: #EDEDED;
+    gap: 2em;
+}
+
+.text-direct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: auto;
+    color: white;
+    background-color: #fa8d4a;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    gap: 1em;
+    padding: 0.8em;
 }
 /* End of img cards */
 
@@ -260,7 +302,7 @@ li {
 }
 
 .hero-content button {
-    background-color: #4CAF50;
+    background-color: #fa8d4a;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -274,5 +316,16 @@ li {
 }
 
 .hero-content button:hover {
-    background-color: #3e8e41;
+    background-color: #1A0000;
 }
+/* End of hero2 */
+
+.mentions {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mentions h5 {
+    font-size: 3em;
+}   
