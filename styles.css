@@ -77,7 +77,7 @@ li {
 }
 
 .title-color {
-    color: #eea97c;
+    color: #7cb16d;
 }
 
 .video-bg {
@@ -120,8 +120,8 @@ li {
     max-width: 500px;
     max-height: 250px;
     padding: 2em;
-    border-left: 2.5px solid;
-    border-image: linear-gradient(to bottom, #968172, #3b3b3a);
+    border-left: 3px solid;
+    border-image: linear-gradient(to bottom, #7cb16d, #48763a);
     border-image-slice: 1;
 }
 
@@ -212,10 +212,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     width: 60vw;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     gap: 2em;
+    border-radius: 1em;
 }
 
 .text-direct {
@@ -226,12 +227,11 @@ li {
     max-width: 400px;
     height: auto;
     color: white;
-    background-color: #968172;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    background-color: #7cb16d;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3), 0px 0px px 0px rgba(0, 0, 0, 0.3);
     gap: 1em;
     padding: 0.8em;
 }
-
 /* End of img cards */
 
 .hero-2 {
@@ -259,7 +259,7 @@ li {
 .hero-content {
     height: 100%;
     width: auto;
-    background-color: rgba(45, 12, 12, 0.726);
+    background-color: rgba(57, 98, 34, 0.726);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +287,7 @@ li {
 }
 
 .hero-content button {
-    background-color: #968172;
+    background-color: #7cb16d;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -329,7 +329,7 @@ li {
 }
 
 .team .team-member {
-    background-color: #98908a;
+    background-color: #7cb16d;
     margin: 5px;
     margin-bottom: 50px;
     width: 300px;
