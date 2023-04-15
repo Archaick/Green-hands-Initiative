@@ -87,6 +87,7 @@ li {
     /* Change thumbnail to vid's origin later */
     background: url('video-thumbnail.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-attachment: fixed;
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
@@ -320,12 +321,47 @@ li {
 }
 /* End of hero2 */
 
-.mentions {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.team-container {
+    margin-top: 10%;
 }
 
-.mentions h5 {
+.team-container h5 {
     font-size: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.team-container h6 {
+    font-size: 1.2em;
+    text-align: center;
 }   
+
+.team {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+}
+
+.team .team-member {
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 1em;
+    line-height: 1.5em;
+    position: relative;
+}
+
+.team .team-member h6 {
+    color: #FA9884;
+    font-size: 1.5em;
+    margin-top: 10%;
+}
+
+.team .team-member .role {
+    columns: #ccc;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 12px;
+}
