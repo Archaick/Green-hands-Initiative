@@ -77,8 +77,7 @@ li {
 }
 
 .title-color {
-    color: #feaf7d;
-    text-shadow: 1.5px 1.5px 1.5px black;
+    color: #eea97c;
 }
 
 .video-bg {
@@ -122,7 +121,7 @@ li {
     max-height: 250px;
     padding: 2em;
     border-left: 2.5px solid;
-    border-image: linear-gradient(to bottom, #feaf7d, #FFA500);
+    border-image: linear-gradient(to bottom, #968172, #3b3b3a);
     border-image-slice: 1;
 }
 
@@ -155,7 +154,7 @@ li {
     width: 920px;
     padding: 1em;
     margin-bottom: 1em;
-    border-left: 3px solid #feaf7d;
+    border-left: 3px solid #968172;
 }
 /* End of mission section*/
 
@@ -168,7 +167,7 @@ li {
 }
 
 .info-container {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     display: flex;
     flex-direction: column;
 }
@@ -189,14 +188,14 @@ li {
     align-items: center;
     gap: 1em;
     padding: 1em;
-    height: 100;
+    height: 100%;
     width: auto;
-    color: #181D31;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
     /* images will not react to interaction */
     pointer-events: none;
 }
+
 .info-img {
     height: 16rem;
     width: 24rem;
@@ -206,16 +205,16 @@ li {
     font-weight: 900;
     font-size: 1.2em;
     color: white;
-    text-shadow: 0px 0.5px 0.5px #FA9884, -0.2px -0.2px 5px #FA9884;
-
+    text-transform: uppercase;
 }
+
 .direction {
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     width: 60vw;
-    background-color: #EDEDED;
+    background-color: #f5f5f5;
     gap: 2em;
 }
 
@@ -224,14 +223,15 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     color: white;
-    background-color: #feaf7d;
+    background-color: #968172;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     gap: 1em;
     padding: 0.8em;
 }
+
 /* End of img cards */
 
 .hero-2 {
@@ -287,7 +287,7 @@ li {
 }
 
 .hero-content button {
-    background-color: #feaf7d;
+    background-color: #968172;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -329,7 +329,7 @@ li {
 }
 
 .team .team-member {
-    background-color: #feaf7d;
+    background-color: #98908a;
     margin: 5px;
     margin-bottom: 50px;
     width: 300px;
@@ -337,6 +337,7 @@ li {
     line-height: 1.5em;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     position: relative;
+    border-radius: 1em;
 }
 
 .team .team-member h6 {
