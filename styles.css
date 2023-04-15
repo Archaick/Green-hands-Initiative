@@ -170,6 +170,7 @@ li {
     width: 920px;
     padding: 1em;
     margin-bottom: 1em;
+    border-left: 3px solid #fa8d4a;
 }
 /* End of mission section*/
 
@@ -210,7 +211,6 @@ li {
     font-size: 1.4em;
     /* images will not react to interaction */
     pointer-events: none;
-    /* background-color: black; */
 }
 .info-img {
     height: 12em;
