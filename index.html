@@ -4,167 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save the Woods with Trees for Tomorrow</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="Shortcut Icon" type="image/svg"
-    href="img/logo.svg"
-    >
+    <title>Green Hands Initiative</title>
 </head>
 
 <body>
-    <nav class="top-navbar">
-        <ul class="left-link">
-            <img src="img/logo.svg" alt="Logo of Trees for Tomorrow" class="main-logo">
-            <li>
-                <a href="" class="logo">Trees for Tomorrow</a>
-            </li>
-        </ul>   
-        <ul class="right-link">
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>    
-            <li><a href="#">Join Us</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-warning">Green Hands Initiative</a>
+            <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+            >
+            <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="text-light navbar-nav ms-auto">
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Join us</a></li>
+                </ul>
+           </div>
+        </div>
     </nav>
     
-    <!-- Hero background -->
-    <div class="hero">
-        <div class="intro-container">
-            <div>
-                <h1 class="intro"><span class="title-color">Trees</span> <br>for<br> Tomorrow</h1>
-            </div>
-            <div>
-                <p class="description">"Trees for Tomorrow" is a non-profit organization dedicated to preserving and protecting forests and the environment
-                </p>
-            </div>
-        </div>
-        <video class="video-bg" autoplay muted loop>
-            <source src="vids/intro.mp4" type="video/mp4">
-        </video>
-    </div>
-<!-- End of hero -->
-    <section class="container">
-        <div class="mission">
-            <h2>What do we do?</h2>
-            <p>Our mission is to educate and inspire people to become stewards of the land and to promote sustainable practices. Through various programs and initiatives, we aim to raise awareness of the importance of trees and their role in mitigating climate change, conserving wildlife habitat, and providing clean air and water. Our organization offers educational resources and opportunities for individuals and communities to get involved and make a difference. Join us in our efforts to ensure a healthy and vibrant future for our planet and generations to come.</p>
-        </div>
-    </section>
-
-    <!-- <div class="divider"></div> -->
-
-    <section class="info-container">
-        <div class="info">
-            <h3>Trees for Tomorrow's core values are centered around</h3>
-        </div>
-        <div class="img-sort">
-
-            <div class="direction"><img src="img/advocacy.jpg" alt="info-img" class="info-img">
-
-                <div class="text-direct">
-                    <p class="card-title">Advocacy</p><p>by promoting environmental protection and action</p>
+    <!-- Intro -->
+    <section class="mt-5">
+        <div class="container mt-5">
+            <div class="d-sm-flex align-items-center justify-content-between gap-3">
+                <div>
+                    <h3 class="h1">Green Hands Initiative</h3>
+                    <p class="lead">"Green Hands Initiative" is a non-profit organization dedicated to preserving and protecting forests and the environment. Our organization offers educational resources and opportunities for individuals and communities to get involved and make a difference</p>
                 </div>
-
-
-            </div>
-
-            <div class="direction"><img src="img/community.jpg" alt="info-img" class="info-img">
-
-                <div class="text-direct">
-                    <p class="card-title">Community</p><p>By encouraging people to create a sustainable environment</p>
-                </div>
-            </div>
-
-            <div class="direction"><img src="img/conservation.jpg" alt="info-img" class="info-img">
-
-                <div class="text-direct">
-                    <p class="card-title">Conservation</p><p>With preserving and protecting natural resources and habitats</p>
-                </div>            
-
-            
-            </div>
-            
-            <div class="direction"><img src="img/education.jpg" alt="info-img" class="info-img">
-
-                <div class="text-direct">
-                    <p class="card-title">Education</p><p>By educating and inspiring people to become environmental stewards</p>
-                </div>               
-
-            
-            </div>
-
-        </div>
-    </section>
-
-    <section class="hero-2">
-        <div class="hero-content">
-            <div class="hero-content2">
-                <header>
-                    <h4>Seeking to be a part of something impactful?</h4>
-                </header>
-                <p>Your donation to Trees for Tomorrow can make a significant difference in preserving our natural environment and educating the next generation. By supporting our cause, you can help us plant more trees, restore habitats, and create sustainable solutions. Join us in making a positive impact on our planet by donating today</p>
-                <button>Support our cause!</button>
+                <img src="img/hero.svg" alt="" class="intro-animate img-fluid w-50 py-1 mx-1 d-none d-sm-block mt-3">
             </div>
         </div>
     </section>
-
-    <section class="team-container">
-        <h5>Meet our staff!</h5>
-
-        <div class="team">
-            <div class="team-member">
-                <div class="team-img">
-                    <img src="img/female.svg" alt="Profile of a female lead">
-                </div>
-                <h6>Sarah Doe</h6>
-                <p class="role">Director</p>
-                <p>Responsible for overseeing the organization's strategic direction and managing daily operations</p>
+    
+    <!-- Email Newsletter -->
+    <section class="bg-body-secondary p-3 mt-3">
+        <div class="container">
+            <div class="d-flex align-items-center gap-2">
+                <h3 class="mb-3 mb-md-0">Get notified of our work!</h3>
             </div>
-
-            <div class="team-member">
-                <div class="team-img">
-                    <img src="img/male.svg" alt="Profile of a male lead">
-                </div>
-                <h6>Jackson Woods</h6>
-                <p class="role">Education Specialist</p>
-                <p>Develops and delivers educational programs to promote environmental awareness and conservation</p>
+            <div class="input-group news-input d-flex gap-2 mt-2 pb-3">
+                <input type="text" class="form-control" placeholder="Recipient's e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="email-btn btn btn-warning" type="button">Subscribe Now!</button>   
             </div>
-
-            <div class="team-member">
-                <div class="team-img">
-                    <img src="img/female.svg" alt="Profile of a female lead">
+        </div>
+    </section>
+    <!-- Goal -->
+    <section id="goal" class="p-5">
+        <h3 class="text-center">Greend Hands Initiative core values are centered around</h3>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/advocasy.svg" alt="" class="img-fluid w-50">
                 </div>
-                <h6>Emily Green</h6>
-                <p class="role">Volunteer Coordinator</p>
-                <p>Manages and coordinates volunteers to assist in various programs and events, helping to foster community engagement and support</p>
+                <div class="col-md p-5">
+                    <h4>Advocasy</h4>
+                    <p class="lead">
+                        By promoting environmental protection and action
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h4>Community</h4>
+                    <p class="lead">
+                        By encouraging people to create a sustainable environment
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="img/community.svg" alt="" class="img-fluid w-50">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/conserve.svg" alt="" class="img-fluid w-50">
+                </div>
+                <div class="col-md p-5">
+                    <h4>Conservation</h4>
+                    <p class="lead">
+                        With preserving and protecting natural resources and habitats
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h4>Education</h4>
+                    <p class="lead">
+                        By educating and inspiring people to become environmental stewards
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="img/education.svg" alt="" class="img-fluid w-50">
+                </div>
             </div>
         </div>
 
     </section>
 
-    <footer>
-        <div class="footer-wrapper">
-          <div class="footer-col">
-            <h3>About Us</h3>
-            <p>We are a non-profit organization dedicated to conservation and education.</p>
+    <!-- Join -->
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Seeking to be a part of something impactful?</h2>
+            <p class="lead">
+                Your donation to Green Hands Initiative can make a significant difference in preserving our natural environment and educating the next generation. By supporting our cause, you can help us plant more trees, restore habitats, and create sustainable solutions
+            </p>
+            <p>
+                Join us in making a positive impact on our planet by donating today
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
           </div>
-          <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Get Involved</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+          <div class="col-md">
+            <img src="img/join.svg" class="img-fluid" alt="" />
           </div>
-          <div class="footer-col">
-            <h3>Contact Us</h3>
-            <p>123 Main St, Anytown USA</p>
-            <p>Email: info@treesfortomorrow.org</p>
-            <p>Phone: 555-555-5555</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff -->
+    <section class="p-5 bg-light">
+        <h4 class="align-items-center text-center">Meet our Staff</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+            
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/female1.svg" class="img-fluid w-25 card-img-top" alt="female avatar">
+                <div class="card-body">
+                  <h5 class="card-title">Sarah Doe</h5>
+                  <p>DIRECTOR</p>
+                  <p class="card-text lead">Responsible for overseeing the organization's strategic direction and managing daily operations
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/female2.svg" class="img-fluid w-25 card-img-top" alt="female avatar">
+                <div class="card-body">
+                  <h5 class="card-title">Emily Green</h5>
+                  <p>VOLUNTEER COORDINATOR</p>
+                  <p class="card-text lead">Manages and coordinates volunteers to assist in various programs and events, helping to foster community engagement and support</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/male1.svg" class="img-fluid w-25 card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jackson Woods</h5>
+                  <p>EDUCATION SPECIALIST</p>
+                  <p class="card-text lead">Develops and delivers educational programs to promote environmental awareness and conservation</p>
+                </div>
+              </div>
+            </div>
           </div>
+    </section>
+    <!-- Contact -->
+    <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Location:</span> 123 Main St, Anytow
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Volunteer Coordinator Phone:</span> (333) 333-3333
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Email:</span> enroll@greenhandsinit.org
+                </li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-3 bg-dark text-white text-center position-relative">
+        <div class="container">
+          <p class="lead">Made with &hearts; by <a href="" class="author">Archaick</a></p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
         </div>
       </footer>
 
+    <script src="js/bootstrap.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <script>
+        mapboxgl.accessToken =
+          'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [-71.060982, 42.35725],
+          zoom: 18,
+        })
+    </script>
 </body>
 </html>
