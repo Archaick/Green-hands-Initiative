@@ -2,7 +2,7 @@
     pointer-events: none;
 }
 
-.intro-animate {
+/* .intro-animate {
     opacity: 0;
     transform: translateX(15%);
     animation: slideInRight 2s ease forwards;
@@ -13,7 +13,7 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 #map {
     width: 100%;
