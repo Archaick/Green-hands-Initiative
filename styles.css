@@ -2,19 +2,6 @@
     pointer-events: none;
 }
 
-/* .intro-animate {
-    opacity: 0;
-    transform: translateX(15%);
-    animation: slideInRight 2s ease forwards;
-}
-
-@keyframes slideInRight {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-} */
-
 #map {
     width: 100%;
     height: 100%;
